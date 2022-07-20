@@ -1,0 +1,22 @@
+server:
+  servlet:
+    context-path: /vuce-zee-api-test
+  port: 8081
+
+spring:
+  application:
+    name: vuce-zee-api-test
+  datasource:
+    url: jdbc:postgresql://192.168.80.20:5444/zee_db?currentSchema=vuce_zee
+    username: zeeperu
+    password: CicQB888PD8LJGxn
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        jdbc:
+          lob:
+            non_contextual_creation: true
+#      ddl-auto: create-drop
+#      ddl-auto: update
+#    generate-ddl: true
